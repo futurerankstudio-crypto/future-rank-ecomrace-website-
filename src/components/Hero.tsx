@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="relative rounded-2xl overflow-hidden bg-[#F1ECE3] shadow-md aspect-[16/10] lg:aspect-auto lg:h-[540px]">
               <img
-                src="/src/assets/images/hero_fashion_editorial_1792821526246.jpg"
+                src="/images/hero_fashion_editorial_1792821526246.jpg"
                 alt="NovaCart AI Luxury Campaign"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"

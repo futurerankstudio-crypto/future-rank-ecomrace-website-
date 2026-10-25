@@ -52,7 +52,7 @@ export const BrandStory: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden bg-[#EAE4D9] shadow-lg border border-[#DDD7CE] aspect-[4/3]">
               <img
-                src="/src/assets/images/product_artisan_accessories_1792821529328.jpg"
+                src="/images/product_artisan_accessories_1792821529328.jpg"
                 alt="NovaCart AI Artisanal Craftsmanship"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

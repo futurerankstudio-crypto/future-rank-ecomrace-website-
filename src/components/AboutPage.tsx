@@ -35,7 +35,7 @@ export const AboutPage: React.FC = () => {
         {/* Featured Editorial Photo */}
         <div className="rounded-2xl overflow-hidden bg-[#F3EFEA] border border-[#E7E2DA] aspect-[16/9] shadow-sm">
           <img
-            src="/src/assets/images/hero_fashion_editorial_1792821526246.jpg"
+            src="/images/hero_fashion_editorial_1792821526246.jpg"
             alt="NovaCart AI Editorial Collection"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

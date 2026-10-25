@@ -31,7 +31,7 @@ export const AdminProducts: React.FC = () => {
       sku: `NC-NEW-${Math.floor(100 + Math.random() * 900)}`,
       availableSizes: ['S', 'M', 'L'],
       availableColours: [{ name: 'Ivory Cream', hex: '#F9F6F0' }],
-      images: ['/src/assets/images/product_embroidered_pret_1792821527541.jpg'],
+      images: ['/images/product_embroidered_pret_1792821527541.jpg'],
       isFeatured: false,
       status: 'published',
       tags: ['pret', 'new']

@@ -20,7 +20,7 @@ export const FeaturedCollections: React.FC = () => {
       name: 'Elegant Pret',
       subtitle: 'Pure 80g raw silk & zari threadwork',
       category: 'Elegant Pret',
-      image: '/src/assets/images/product_embroidered_pret_1792821527541.jpg',
+      image: '/images/product_embroidered_pret_1792821527541.jpg',
       count: products.filter((p) => p.category === 'Elegant Pret').length
     },
     {
@@ -28,7 +28,7 @@ export const FeaturedCollections: React.FC = () => {
       name: 'Contemporary Formal',
       subtitle: 'Architectural linen & tailored separates',
       category: 'Contemporary Formal',
-      image: '/src/assets/images/product_contemporary_suit_1792821527800.jpg',
+      image: '/images/product_contemporary_suit_1792821527800.jpg',
       count: products.filter((p) => p.category === 'Contemporary Formal').length
     },
     {
@@ -36,7 +36,7 @@ export const FeaturedCollections: React.FC = () => {
       name: 'Seasonal Edit',
       subtitle: 'Dusk rose organza & festive peshwas',
       category: 'Seasonal Edit',
-      image: '/src/assets/images/product_formal_chiffon_1792821528510.jpg',
+      image: '/images/product_formal_chiffon_1792821528510.jpg',
       count: products.filter((p) => p.category === 'Seasonal Edit').length
     },
     {
@@ -44,7 +44,7 @@ export const FeaturedCollections: React.FC = () => {
       name: 'Everyday Essentials',
       subtitle: 'Lightweight supima lawn & breathable tunics',
       category: 'Everyday Essentials',
-      image: '/src/assets/images/hero_fashion_editorial_1792821526246.jpg',
+      image: '/images/hero_fashion_editorial_1792821526246.jpg',
       count: products.filter((p) => p.category === 'Everyday Essentials').length
     },
     {
@@ -52,7 +52,7 @@ export const FeaturedCollections: React.FC = () => {
       name: 'Accessories',
       subtitle: '24k filigree & embroidered silk clutches',
       category: 'Accessories',
-      image: '/src/assets/images/product_artisan_accessories_1792821529328.jpg',
+      image: '/images/product_artisan_accessories_1792821529328.jpg',
       count: products.filter((p) => p.category === 'Accessories').length
     }
   ];

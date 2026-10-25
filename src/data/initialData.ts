@@ -18,7 +18,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 24500,
     salePrice: 22500,
     currency: 'PKR',
-    images: ['/src/assets/images/product_embroidered_pret_1792821527541.jpg'],
+    images: ['/images/product_embroidered_pret_1792821527541.jpg'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Ivory Cream', hex: '#F9F6F0' },
@@ -41,7 +41,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Contemporary Formal',
     price: 18900,
     currency: 'PKR',
-    images: ['/src/assets/images/product_contemporary_suit_1792821527800.jpg'],
+    images: ['/images/product_contemporary_suit_1792821527800.jpg'],
     availableSizes: ['S', 'M', 'L'],
     availableColours: [
       { name: 'Oat Beige', hex: '#DDD2C3' },
@@ -64,7 +64,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Seasonal Edit',
     price: 34000,
     currency: 'PKR',
-    images: ['/src/assets/images/product_formal_chiffon_1792821528510.jpg'],
+    images: ['/images/product_formal_chiffon_1792821528510.jpg'],
     availableSizes: ['XS', 'S', 'M', 'L'],
     availableColours: [
       { name: 'Dusk Rose', hex: '#C79A9C' },
@@ -86,7 +86,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Accessories',
     price: 14500,
     currency: 'PKR',
-    images: ['/src/assets/images/product_artisan_accessories_1792821529328.jpg'],
+    images: ['/images/product_artisan_accessories_1792821529328.jpg'],
     availableSizes: ['One Size'],
     availableColours: [
       { name: 'Vintage Gold', hex: '#D4AF37' },
@@ -108,7 +108,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Everyday Essentials',
     price: 8500,
     currency: 'PKR',
-    images: ['/src/assets/images/hero_fashion_editorial_1792821526246.jpg'],
+    images: ['/images/hero_fashion_editorial_1792821526246.jpg'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Ivory White', hex: '#FAF9F6' },
@@ -130,7 +130,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Accessories',
     price: 6200,
     currency: 'PKR',
-    images: ['/src/assets/images/product_embroidered_pret_1792821527541.jpg'],
+    images: ['/images/product_embroidered_pret_1792821527541.jpg'],
     availableSizes: ['2.75 Meters Standard'],
     availableColours: [
       { name: 'Champagne Shimmer', hex: '#F0E6D2' },
@@ -164,7 +164,7 @@ export const INITIAL_ORDERS: Order[] = [
         color: 'Ivory Cream',
         quantity: 1,
         price: 22500,
-        image: '/src/assets/images/product_embroidered_pret_1792821527541.jpg'
+        image: '/images/product_embroidered_pret_1792821527541.jpg'
       }
     ],
     subtotal: 22500,
@@ -198,7 +198,7 @@ export const INITIAL_ORDERS: Order[] = [
         color: 'Vintage Gold',
         quantity: 1,
         price: 14500,
-        image: '/src/assets/images/product_artisan_accessories_1792821529328.jpg'
+        image: '/images/product_artisan_accessories_1792821529328.jpg'
       }
     ],
     subtotal: 14500,
