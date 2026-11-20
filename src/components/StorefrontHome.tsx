@@ -35,6 +35,8 @@ export const StorefrontHome: React.FC = () => {
             <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=75" alt="Contemporary fashion styling" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
             <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=75" alt="Curated wardrobe details" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
             <div className="col-span-2 relative overflow-hidden rounded-2xl aspect-[2/1] bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=75" alt="Luxury fashion collection" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=650&q=68" alt="Modern womenswear fashion look" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=650&q=68" alt="Fashion portrait and styling inspiration" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
           </div>
         </div>
       </section>
