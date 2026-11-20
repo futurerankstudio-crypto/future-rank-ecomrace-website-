@@ -11,7 +11,7 @@ export const StorefrontHome: React.FC = () => {
   const { products, setActiveView, setSelectedCategory, setIsAssistantOpen } = useStore();
   const [activeTab, setActiveTab] = useState<'bestsellers' | 'new_arrivals'>('bestsellers');
 
-  const bestsellers = products.filter((p) => p.isFeatured || p.stock < 15).slice(0, 4);
+  const bestsellers = products.filter((p) => p.isFeatured || p.stock < 15).slice(0, 8);
   const newArrivals = [...products]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
     .slice(0, 4);
@@ -46,7 +46,7 @@ export const StorefrontHome: React.FC = () => {
 
       {/* Bestsellers and New Arrivals Showcase */}
       <section className="py-12 sm:py-20 bg-white border-b border-[#E7E2DA]">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest text-[#8A7D6B] font-medium">
@@ -97,7 +97,7 @@ export const StorefrontHome: React.FC = () => {
               }}
               className="px-6 py-3 bg-[#FAF8F5] border border-[#DDD7CE] text-xs font-semibold text-[#1C1C1F] rounded-lg hover:border-[#1C1C1F] hover:bg-[#F2ECE1] transition-colors inline-flex items-center gap-2"
             >
-              <span>Explore All 6 Designs in Catalog</span>
+              <span>Explore All 21 Designs in Catalog</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
