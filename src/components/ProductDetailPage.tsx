@@ -67,8 +67,8 @@ export const ProductDetailPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FAF8F5] min-h-screen py-8 md:py-14 border-b border-[#E7E2DA]">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-[#FAF8F5] min-h-screen py-6 sm:py-8 md:py-14 border-b border-[#E7E2DA]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-[#7A7875] mb-8">
           <button
@@ -100,7 +100,7 @@ export const ProductDetailPage: React.FC = () => {
         </button>
 
         {/* PDP Layout: Sticky Gallery (Left) & Contiguous Purchase Module (Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-10 lg:gap-12 items-start">
           {/* Left Column: Gallery */}
           <div className="lg:col-span-7 space-y-4">
             <div className="relative rounded-2xl overflow-hidden bg-[#F3EFEA] border border-[#E7E2DA] aspect-[4/5] shadow-sm">
