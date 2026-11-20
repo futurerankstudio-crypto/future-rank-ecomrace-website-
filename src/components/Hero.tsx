@@ -74,6 +74,8 @@ export const Hero: React.FC = () => {
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
               
