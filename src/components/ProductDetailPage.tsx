@@ -27,6 +27,8 @@ export const ProductDetailPage: React.FC = () => {
 
   const product = products.find((p) => p.id === selectedProductId) || products[0];
 
+  const [activeImage, setActiveImage] = useState(0);
+  const galleryImages = [product.images[0], 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=78', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=78'];
   const [selectedSize, setSelectedSize] = useState<string>(product.availableSizes[0] || 'M');
   const [selectedColor, setSelectedColor] = useState<string>(product.availableColours[0]?.name || 'Standard');
   const [quantity, setQuantity] = useState<number>(1);
@@ -103,9 +105,10 @@ export const ProductDetailPage: React.FC = () => {
           <div className="lg:col-span-7 space-y-4">
             <div className="relative rounded-2xl overflow-hidden bg-[#F3EFEA] border border-[#E7E2DA] aspect-[4/5] shadow-sm">
               <img
-                src={product.images[0]}
+                src={galleryImages[activeImage]}
                 alt={product.name}
                 className="w-full h-full object-cover object-center"
+                loading="eager" decoding="async"
                 referrerPolicy="no-referrer"
               />
               {product.salePrice && (
@@ -115,22 +118,8 @@ export const ProductDetailPage: React.FC = () => {
               )}
             </div>
 
-            {/* Thumbnail Carousel / Secondary Views */}
             <div className="grid grid-cols-3 gap-3">
-              <div className="rounded-lg overflow-hidden border-2 border-[#1C1C1F] aspect-square bg-[#F3EFEA]">
-                <img
-                  src={product.images[0]}
-                  alt={`${product.name} view 1`}
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden border border-[#E7E2DA] aspect-square bg-[#F3EFEA] opacity-80 flex items-center justify-center text-xs text-[#7A7875] p-2 text-center">
-                Atelier Macro Stitch Detail
-              </div>
-              <div className="rounded-lg overflow-hidden border border-[#E7E2DA] aspect-square bg-[#F3EFEA] opacity-80 flex items-center justify-center text-xs text-[#7A7875] p-2 text-center">
-                Pure Weave Texture
-              </div>
+              {galleryImages.map((src, index) => <button key={src} type="button" onClick={() => setActiveImage(index)} aria-label={`Show product image ${index+1}`} className={`rounded-lg overflow-hidden border-2 aspect-square bg-[#F3EFEA] ${activeImage===index?'border-[#1C1C1F]':'border-[#E7E2DA]'}`}><img src={src} alt={`${product.name} gallery view ${index+1}`} loading="lazy" decoding="async" className="w-full h-full object-cover"/></button>)}
             </div>
           </div>
 
