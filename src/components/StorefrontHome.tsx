@@ -24,13 +24,13 @@ export const StorefrontHome: React.FC = () => {
       <Hero />
 
       {/* Editorial image story */}
-      <section className="py-16 md:py-20 bg-white border-b border-[#E7E2DA]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-10 sm:py-16 md:py-20 bg-white border-b border-[#E7E2DA]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
             <div><span className="text-xs uppercase tracking-[0.22em] text-[#8A7D6B]">The art of dressing</span><h2 className="font-serif text-3xl md:text-4xl mt-2">Made to be remembered.</h2></div>
             <p className="text-sm text-[#706D68] max-w-md">A closer look at refined silhouettes, thoughtful details and timeless textures.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3 md:gap-5">
             <div className="col-span-2 row-span-2 relative overflow-hidden rounded-2xl aspect-[4/5] bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=78" alt="Fashion editorial portrait" loading="lazy" decoding="async" className="w-full h-full object-cover"/><span className="absolute bottom-5 left-5 text-white text-xs uppercase tracking-[0.2em]">The editorial edit</span></div>
             <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=75" alt="Contemporary fashion styling" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
             <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=75" alt="Curated wardrobe details" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
@@ -43,7 +43,7 @@ export const StorefrontHome: React.FC = () => {
       <FeaturedCollections />
 
       {/* Bestsellers and New Arrivals Showcase */}
-      <section className="py-20 bg-white border-b border-[#E7E2DA]">
+      <section className="py-12 sm:py-20 bg-white border-b border-[#E7E2DA]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
@@ -81,7 +81,7 @@ export const StorefrontHome: React.FC = () => {
           </div>
 
           {/* Product Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {displayedProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
@@ -103,9 +103,9 @@ export const StorefrontHome: React.FC = () => {
       </section>
 
       {/* "Find Your Perfect Look" Interactive Concierge Banner */}
-      <section className="py-16 bg-[#F8F5EE] border-b border-[#E7E2DA]">
+      <section className="py-10 sm:py-16 bg-[#F8F5EE] border-b border-[#E7E2DA]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="p-8 md:p-12 rounded-3xl bg-white border border-[#E7E2DA] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl bg-white border border-[#E7E2DA] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-[#B89758] font-semibold">
                 <Sparkles className="w-4 h-4" />
@@ -143,7 +143,7 @@ export const StorefrontHome: React.FC = () => {
       </section>
 
       {/* Store Trust / Guarantees Strip */}
-      <section className="py-12 bg-white border-b border-[#E7E2DA]">
+      <section className="py-9 sm:py-12 bg-white border-b border-[#E7E2DA]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="flex items-start gap-4">
