@@ -23,6 +23,22 @@ export const StorefrontHome: React.FC = () => {
       {/* Hero Campaign */}
       <Hero />
 
+      {{/* Editorial image story */}
+      <section className="py-16 md:py-20 bg-white border-b border-[#E7E2DA]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
+            <div><span className="text-xs uppercase tracking-[0.22em] text-[#8A7D6B]">The art of dressing</span><h2 className="font-serif text-3xl md:text-4xl mt-2">Made to be remembered.</h2></div>
+            <p className="text-sm text-[#706D68] max-w-md">A closer look at refined silhouettes, thoughtful details and timeless textures.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+            <div className="col-span-2 row-span-2 relative overflow-hidden rounded-2xl aspect-[4/5] bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=78" alt="Fashion editorial portrait" loading="lazy" decoding="async" className="w-full h-full object-cover"/><span className="absolute bottom-5 left-5 text-white text-xs uppercase tracking-[0.2em]">The editorial edit</span></div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=75" alt="Contemporary fashion styling" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=75" alt="Curated wardrobe details" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
+            <div className="col-span-2 relative overflow-hidden rounded-2xl aspect-[2/1] bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=75" alt="Luxury fashion collection" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
+          </div>
+        </div>
+      </section>}
+
       {/* Featured Collections Showcase */}
       <FeaturedCollections />
 
