@@ -7,17 +7,17 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="relative overflow-hidden bg-[#FAF8F5] border-b border-[#E7E2DA]">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-10 lg:gap-8 items-center">
           {/* Left Column: Editorial Typography & Actions */}
-          <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
+          <div className="lg:col-span-5 flex flex-col justify-center space-y-5 sm:space-y-6">
             <div className="flex items-center gap-3 text-xs tracking-widest uppercase text-[#8A7D6B] font-medium">
               <span>Autumn / Winter Edit</span>
               <span aria-hidden="true">·</span>
               <span>Pure Raw Silk & Linen</span>
             </div>
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1C1C1F] leading-[1.08] text-balance">
+            <h1 className="font-serif text-[2.65rem] sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1C1C1F] leading-[1.06] text-balance">
               Your Style. <br />
               <span className="italic font-normal text-[#8A7D6B]">Your Story.</span>
             </h1>
@@ -27,13 +27,13 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            <div className="pt-2 grid grid-cols-1 sm:flex sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={() => {
                   setSelectedCategory('All');
                   setActiveView('shop');
                 }}
-                className="px-6 py-3.5 bg-[#1C1C1F] text-[#FAF8F5] text-sm font-medium rounded-lg hover:bg-[#2D2D32] transition-colors flex items-center gap-2 whitespace-nowrap shadow-sm"
+                className="w-full sm:w-auto justify-center px-5 sm:px-6 py-3.5 bg-[#1C1C1F] text-[#FAF8F5] text-sm font-medium rounded-lg hover:bg-[#2D2D32] transition-colors flex items-center gap-2 whitespace-nowrap shadow-sm"
               >
                 <span>Shop Collection</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -44,14 +44,14 @@ export const Hero: React.FC = () => {
                   setSelectedCategory('Elegant Pret');
                   setActiveView('shop');
                 }}
-                className="px-6 py-3.5 bg-white text-[#1C1C1F] border border-[#D5CEC2] text-sm font-medium rounded-lg hover:border-[#1C1C1F] hover:bg-[#F7F4EE] transition-colors whitespace-nowrap"
+                className="w-full sm:w-auto text-center px-5 sm:px-6 py-3.5 bg-white text-[#1C1C1F] border border-[#D5CEC2] text-sm font-medium rounded-lg hover:border-[#1C1C1F] hover:bg-[#F7F4EE] transition-colors whitespace-nowrap"
               >
                 Explore New Arrivals
               </button>
             </div>
 
             {/* AI Assistant Callout */}
-            <div className="pt-4 border-t border-[#E8E3DA] flex items-center justify-between text-xs text-[#6B6864]">
+            <div className="pt-4 border-t border-[#E8E3DA] flex flex-wrap items-center justify-between gap-2 text-xs text-[#6B6864]">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#B89758]" />
                 <span>Need sizing or styling advice?</span>
@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
 
           {/* Right Column: Campaign Focal Photography */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-2xl overflow-hidden bg-[#F1ECE3] shadow-md aspect-[16/10] lg:aspect-auto lg:h-[540px]">
+            <div className="relative rounded-2xl overflow-hidden bg-[#F1ECE3] shadow-md aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:h-[540px]">
               <img
                 src="/images/hero_fashion_editorial_1792821526246.jpg"
                 alt="NovaCart AI Luxury Campaign"
