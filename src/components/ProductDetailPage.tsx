@@ -106,6 +106,10 @@ export const ProductDetailPage: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden bg-[#F3EFEA] border border-[#E7E2DA] aspect-[4/5] shadow-sm">
               <img
                 src={galleryImages[activeImage]}
+                onError={(event) => {
+                  event.currentTarget.onerror = null;
+                  event.currentTarget.src = '/images/hero_fashion_editorial_1792821526246.jpg';
+                }}
                 alt={product.name}
                 className="w-full h-full object-cover object-center"
                 loading="eager" decoding="async"
@@ -119,7 +123,7 @@ export const ProductDetailPage: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-3">
-              {galleryImages.map((src, index) => <button key={src} type="button" onClick={() => setActiveImage(index)} aria-label={`Show product image ${index+1}`} className={`rounded-lg overflow-hidden border-2 aspect-square bg-[#F3EFEA] ${activeImage===index?'border-[#1C1C1F]':'border-[#E7E2DA]'}`}><img src={src} alt={`${product.name} gallery view ${index+1}`} loading="lazy" decoding="async" className="w-full h-full object-cover"/></button>)}
+              {galleryImages.map((src, index) => <button key={src} type="button" onClick={() => setActiveImage(index)} aria-label={`Show product image ${index+1}`} className={`rounded-lg overflow-hidden border-2 aspect-square bg-[#F3EFEA] ${activeImage===index?'border-[#1C1C1F]':'border-[#E7E2DA]'}`}><img src={src} alt={`${product.name} gallery view ${index+1}`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = '/images/hero_fashion_editorial_1792821526246.jpg'; }} loading="lazy" decoding="async" className="w-full h-full object-cover"/></button>)}
             </div>
           </div>
 
