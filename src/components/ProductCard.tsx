@@ -57,6 +57,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="relative aspect-[3/4] overflow-hidden bg-[#F4F1EA]">
         <img
           src={product.images[0]}
+          onError={(event) => {
+            event.currentTarget.onerror = null;
+            event.currentTarget.src = '/images/hero_fashion_editorial_1792821526246.jpg';
+          }}
           alt={product.name}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
           referrerPolicy="no-referrer"
