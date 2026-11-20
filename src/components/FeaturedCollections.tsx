@@ -101,6 +101,7 @@ export const FeaturedCollections: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                 <span className="absolute top-4 right-4 text-xs font-mono tabular-nums text-white/90 bg-black/40 px-2.5 py-1 rounded backdrop-blur-sm">
