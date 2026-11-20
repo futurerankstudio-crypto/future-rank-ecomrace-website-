@@ -81,6 +81,8 @@ export const Footer: React.FC = () => {
               <li>7-Day Hassle-Free Exchange Policy</li>
               <li>Custom Atelier Sizing Consultation</li>
               <li>100% Verified Fabric Specifications</li>
+              <li><button onClick={() => setActiveView('size_guide')} className='hover:text-white'>Size Guide</button></li>
+              <li><button onClick={() => setActiveView('faq')} className='hover:text-white'>Frequently Asked Questions</button></li>
             </ul>
           </div>
 
