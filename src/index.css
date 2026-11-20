@@ -36,3 +36,8 @@ h1, h2, h3, .font-editorial {
 ::-webkit-scrollbar-thumb:hover {
   background: #B89758;
 }
+
+
+html { scroll-behavior: smooth; }
+img { content-visibility: auto; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
