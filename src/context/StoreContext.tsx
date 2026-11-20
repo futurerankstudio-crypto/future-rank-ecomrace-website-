@@ -102,7 +102,10 @@ export const StoreProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       if (res.ok) {
         const data = await res.json();
         if (data.products && Array.isArray(data.products)) {
-          setProducts(data.products);
+          const remoteProducts = data.products as Product[];
+          const remoteIds = new Set(remoteProducts.map((product) => product.id));
+          const additionalShowcaseProducts = INITIAL_PRODUCTS.filter((product) => Number(product.id.split('-')[1]) >= 7 && !remoteIds.has(product.id));
+          setProducts([...remoteProducts, ...additionalShowcaseProducts]);
         }
       }
     } catch (e) {
