@@ -14,7 +14,7 @@ export const StorefrontHome: React.FC = () => {
   const bestsellers = products.filter((p) => p.isFeatured || p.stock < 15).slice(0, 8);
   const newArrivals = [...products]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-    .slice(0, 4);
+    .slice(0, 8);
 
   const displayedProducts = activeTab === 'bestsellers' ? bestsellers : newArrivals;
 
