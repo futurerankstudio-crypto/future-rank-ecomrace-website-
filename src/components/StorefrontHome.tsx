@@ -97,7 +97,7 @@ export const StorefrontHome: React.FC = () => {
               }}
               className="px-6 py-3 bg-[#FAF8F5] border border-[#DDD7CE] text-xs font-semibold text-[#1C1C1F] rounded-lg hover:border-[#1C1C1F] hover:bg-[#F2ECE1] transition-colors inline-flex items-center gap-2"
             >
-              <span>Explore All 21 Designs in Catalog</span>
+              <span>Explore All 27 Designs in Catalog</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
