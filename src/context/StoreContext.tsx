@@ -9,8 +9,8 @@ interface StoreContextType {
   currency: CurrencyCode;
   setCurrency: (c: CurrencyCode) => void;
   formatPrice: (pkrAmount: number) => string;
-  activeView: 'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'admin';
-  setActiveView: (view: 'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'admin') => void;
+  activeView: 'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'faq' | 'size_guide' | 'admin';
+  setActiveView: (view: 'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'faq' | 'size_guide' | 'admin') => void;
   selectedProductId: string | null;
   openProductDetail: (id: string) => void;
   quickViewProduct: Product | null;
@@ -50,7 +50,7 @@ export const StoreProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const [products, setProducts] = useState<Product[]>(INITIAL_PRODUCTS);
   const [isLoadingProducts, setIsLoadingProducts] = useState(false);
   const [currency, setCurrency] = useState<CurrencyCode>('PKR');
-  const [activeView, setActiveView] = useState<'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'admin'>('storefront');
+  const [activeView, setActiveView] = useState<'storefront' | 'shop' | 'product_detail' | 'about' | 'contact' | 'faq' | 'size_guide' | 'admin'>('storefront');
   const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
