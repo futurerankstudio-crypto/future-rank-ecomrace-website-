@@ -23,7 +23,7 @@ export const StorefrontHome: React.FC = () => {
       {/* Hero Campaign */}
       <Hero />
 
-      {{/* Editorial image story */}
+      {/* Editorial image story */}
       <section className="py-16 md:py-20 bg-white border-b border-[#E7E2DA]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
@@ -37,7 +37,7 @@ export const StorefrontHome: React.FC = () => {
             <div className="col-span-2 relative overflow-hidden rounded-2xl aspect-[2/1] bg-[#F3EFEA]"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=75" alt="Luxury fashion collection" loading="lazy" decoding="async" className="w-full h-full object-cover"/></div>
           </div>
         </div>
-      </section>}
+      </section>
 
       {/* Featured Collections Showcase */}
       <FeaturedCollections />
