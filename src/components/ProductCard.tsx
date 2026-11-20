@@ -128,7 +128,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
 
       {/* Card Content & Details */}
-      <div className="p-4 flex flex-col justify-between flex-grow bg-white">
+      <div className="p-2.5 sm:p-4 flex flex-col justify-between flex-grow bg-white">
         <div>
           {/* Category & SKU in quiet unboxed text */}
           <div className="flex items-center justify-between text-xs text-[#7A7875]">
@@ -137,7 +137,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
 
           {/* Product Name */}
-          <h3 className="font-serif text-lg font-medium text-[#1C1C1F] group-hover:text-[#B89758] transition-colors mt-1 line-clamp-1">
+          <h3 className="font-serif text-base sm:text-lg font-medium text-[#1C1C1F] group-hover:text-[#B89758] transition-colors mt-1 line-clamp-2 min-h-[2.8rem] sm:min-h-0">
             {product.name}
           </h3>
 
@@ -155,7 +155,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
 
         {/* Variant Controls: Colors & Sizes */}
-        <div className="mt-3 pt-3 border-t border-[#F2EEE9] flex items-center justify-between text-xs">
+        <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-[#F2EEE9] flex flex-wrap items-center justify-between gap-2 text-xs">
           {/* Color Dots */}
           <div className="flex items-center gap-1.5" onClick={(e) => e.stopPropagation()}>
             {product.availableColours.map((color) => (
