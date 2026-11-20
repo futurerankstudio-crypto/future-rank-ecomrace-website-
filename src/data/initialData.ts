@@ -372,7 +372,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Elegant Pret',
     price: 17900,
     currency: 'PKR',
-    images: ['https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=72'],
+    images: ['https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=72'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Powder Blue', hex: '#AFC9D8' },
@@ -394,7 +394,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Seasonal Edit',
     price: 27500,
     currency: 'PKR',
-    images: ['https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=72'],
+    images: ['https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=900&q=72'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Champagne', hex: '#D8C6A5' },
@@ -416,7 +416,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Everyday Essentials',
     price: 12500,
     currency: 'PKR',
-    images: ['https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=72'],
+    images: ['https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=72'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Terracotta', hex: '#B96F50' },
@@ -438,7 +438,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Elegant Pret',
     price: 25800,
     currency: 'PKR',
-    images: ['https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=72'],
+    images: ['https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=900&q=72'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Lavender', hex: '#B8A5C9' },
@@ -460,7 +460,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Contemporary Formal',
     price: 18500,
     currency: 'PKR',
-    images: ['https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=72'],
+    images: ['https://images.unsplash.com/photo-1548624149-f2f1e8d5fefb?auto=format&fit=crop&w=900&q=72'],
     availableSizes: ['XS', 'S', 'M', 'L', 'XL'],
     availableColours: [
       { name: 'Olive Green', hex: '#68724B' },
