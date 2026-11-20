@@ -86,8 +86,8 @@ export const ShopPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FAF8F5] min-h-screen py-10 md:py-16 border-b border-[#E7E2DA]">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-[#FAF8F5] min-h-screen py-7 sm:py-10 md:py-16 border-b border-[#E7E2DA]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Page Header */}
         <div className="mb-10 text-center max-w-2xl mx-auto space-y-3">
           <span className="text-xs uppercase tracking-widest text-[#8A7D6B] font-medium">
@@ -264,7 +264,7 @@ export const ShopPage: React.FC = () => {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
             {filteredProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
