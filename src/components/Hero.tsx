@@ -70,8 +70,11 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden bg-[#F1ECE3] shadow-md aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:h-[540px]">
               <img
                 src="/images/hero_fashion_editorial_1792821526246.jpg"
-                alt="NovaCart AI Luxury Campaign"
+                alt="NovaCart AI luxury fashion campaign"
                 className="w-full h-full object-cover object-center"
+                width="1600"
+                height="2000"
+                sizes="(max-width: 1024px) 100vw, 58vw"
                 referrerPolicy="no-referrer"
                 loading="eager"
                 fetchPriority="high"
