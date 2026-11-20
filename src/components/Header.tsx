@@ -27,6 +27,8 @@ export const Header: React.FC = () => {
     { label: 'New Arrivals', action: () => { setSelectedCategory('All'); setActiveView('shop'); } },
     { label: 'Collections', action: () => { setSelectedCategory('Elegant Pret'); setActiveView('shop'); } },
     { label: 'About', view: 'about' as const },
+    { label: 'Size Guide', view: 'size_guide' as const },
+    { label: 'FAQ', view: 'faq' as const },
     { label: 'Contact', view: 'contact' as const }
   ];
 
