@@ -210,7 +210,8 @@ export const Header: React.FC = () => {
                 {item.label}
               </button>
             ))}
-            <div className="pt-3 flex flex-col gap-3">\n              <label className="flex items-center justify-between text-sm text-[#6B6864]">Currency <select value={currency} onChange={(e) => setCurrency(e.target.value as CurrencyCode)} className="bg-white border border-[#DDD7CE] rounded-md px-3 py-2 text-sm text-[#1C1C1F]"><option value="PKR">PKR (Rs.)</option><option value="USD">USD ($)</option><option value="AED">AED</option><option value="GBP">GBP (£)</option></select></label>
+            <div className="pt-3 flex flex-col gap-3">
+              <label className="flex items-center justify-between text-sm text-[#6B6864]">Currency <select value={currency} onChange={(e) => setCurrency(e.target.value as CurrencyCode)} className="bg-white border border-[#DDD7CE] rounded-md px-3 py-2 text-sm text-[#1C1C1F]"><option value="PKR">PKR (Rs.)</option><option value="USD">USD ($)</option><option value="AED">AED</option><option value="GBP">GBP (£)</option></select></label>
               <button
                 onClick={() => { setActiveView('admin'); setIsMobileMenuOpen(false); }}
                 className="flex items-center gap-2 py-2 text-sm text-[#B89758] font-semibold"
