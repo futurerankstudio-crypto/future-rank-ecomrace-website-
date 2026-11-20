@@ -7,6 +7,8 @@ import { ShopPage } from './components/ShopPage.tsx';
 import { ProductDetailPage } from './components/ProductDetailPage.tsx';
 import { AboutPage } from './components/AboutPage.tsx';
 import { ContactPage } from './components/ContactPage.tsx';
+import { FAQPage } from './components/FAQPage.tsx';
+import { SizeGuidePage } from './components/SizeGuidePage.tsx';
 import { Footer } from './components/Footer.tsx';
 import { ProductQuickView } from './components/ProductQuickView.tsx';
 import { CartDrawer } from './components/CartDrawer.tsx';
@@ -41,6 +43,8 @@ const AppContent: React.FC = () => {
         {activeView === 'product_detail' && <ProductDetailPage />}
         {activeView === 'about' && <AboutPage />}
         {activeView === 'contact' && <ContactPage />}
+        {activeView === 'faq' && <FAQPage />}
+        {activeView === 'size_guide' && <SizeGuidePage />}
       </main>
 
       {/* Footer */}
