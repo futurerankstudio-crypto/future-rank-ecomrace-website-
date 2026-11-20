@@ -79,14 +79,14 @@ export const Header: React.FC = () => {
       )}
 
       {/* Top Bar Contract (3 Zones) */}
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 min-h-16 sm:min-h-20 flex items-center justify-between gap-2 sm:gap-4 lg:gap-8">
         {/* Zone 1: Brand Wordmark */}
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={() => { setActiveView('storefront'); setIsMobileMenuOpen(false); }}
-            className="group text-left"
+            className="group text-left min-w-0"
           >
-            <span className="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-[#1C1C1F] group-hover:text-[#B89758] transition-colors whitespace-nowrap">
+            <span className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-[#1C1C1F] group-hover:text-[#B89758] transition-colors whitespace-nowrap">
               NovaCart<span className="text-[#B89758] font-normal italic ml-1">AI</span>
             </span>
           </button>
@@ -110,13 +110,13 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Zone 3: Functional Actions */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+        <div className="flex items-center gap-1 sm:gap-2 lg:gap-4 shrink-0">
           {/* Currency Switcher */}
           <select
             value={currency}
             aria-label="Select Currency"
             onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
-            className="text-xs font-semibold bg-transparent border border-[#DDD7CE] text-[#4A4845] rounded-md px-2 py-1.5 focus:outline-none cursor-pointer hover:border-[#1C1C1F]"
+            className="hidden sm:block text-[10px] sm:text-xs font-semibold bg-transparent border border-[#DDD7CE] text-[#4A4845] rounded-md px-1.5 sm:px-2 py-1.5 focus:outline-none cursor-pointer hover:border-[#1C1C1F]"
           >
             <option value="PKR">PKR (Rs.)</option>
             <option value="USD">USD ($)</option>
@@ -137,17 +137,17 @@ export const Header: React.FC = () => {
           {/* AI Fashion Assistant Trigger */}
           <button
             onClick={() => setIsAssistantOpen(true)}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#1C1C1F] bg-[#FAF8F5] border border-[#B89758] hover:bg-[#B89758]/10 transition-colors rounded-full whitespace-nowrap"
+            className="flex items-center justify-center gap-1.5 w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 text-xs font-medium text-[#1C1C1F] bg-[#FAF8F5] border border-[#B89758] hover:bg-[#B89758]/10 transition-colors rounded-full whitespace-nowrap"
             title="AI Styling Concierge"
           >
             <Sparkles className="w-3.5 h-3.5 text-[#B89758]" />
-            <span className="hidden sm:inline">Ask Stylist</span>
+            <span className="hidden md:inline">Ask Stylist</span>
           </button>
 
           {/* Wishlist */}
           <button
             onClick={() => { setSelectedCategory('All'); setActiveView('shop'); }}
-            className="relative p-2 text-[#4A4845] hover:text-[#1C1C1F] transition-colors rounded-full hover:bg-[#F3EFEA]"
+            className="relative hidden sm:inline-flex p-2 text-[#4A4845] hover:text-[#1C1C1F] transition-colors rounded-full hover:bg-[#F3EFEA]"
             title="Wishlist"
             aria-label="Wishlist"
           >
@@ -162,7 +162,7 @@ export const Header: React.FC = () => {
           {/* Shopping Cart Button */}
           <button
             onClick={() => setIsCartOpen(true)}
-            className="relative flex items-center gap-2 px-3.5 py-2 bg-[#1C1C1F] text-[#FAF8F5] text-xs font-medium rounded-lg hover:bg-[#2D2D32] transition-colors whitespace-nowrap shrink-0"
+            className="relative flex items-center gap-1.5 px-2.5 sm:px-3.5 py-2 bg-[#1C1C1F] text-[#FAF8F5] text-xs font-medium rounded-lg hover:bg-[#2D2D32] transition-colors whitespace-nowrap shrink-0"
             aria-label="Shopping Cart"
           >
             <ShoppingBag className="w-4 h-4" />
@@ -175,7 +175,7 @@ export const Header: React.FC = () => {
           {/* Admin Switcher */}
           <button
             onClick={() => setActiveView(activeView === 'admin' ? 'storefront' : 'admin')}
-            className={`p-2 rounded-lg border text-xs font-medium transition-colors flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
+            className={`hidden lg:flex p-2 rounded-lg border text-xs font-medium transition-colors items-center gap-1.5 whitespace-nowrap shrink-0 ${
               activeView === 'admin'
                 ? 'bg-[#B89758] text-white border-[#B89758]'
                 : 'bg-white text-[#4A4845] border-[#DDD7CE] hover:text-[#1C1C1F] hover:border-[#1C1C1F]'
@@ -189,7 +189,7 @@ export const Header: React.FC = () => {
           {/* Mobile Menu Hamburger */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-[#4A4845] hover:text-[#1C1C1F]"
+            className="lg:hidden p-2 text-[#4A4845] hover:text-[#1C1C1F] shrink-0"
             aria-label="Toggle navigation"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -199,7 +199,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Drawer Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#FAF8F5] border-b border-[#E7E2DA] px-6 py-6 transition-all animate-fadeIn">
+        <div className="lg:hidden bg-[#FAF8F5] border-b border-[#E7E2DA] px-4 sm:px-6 py-5 transition-all animate-fadeIn">
           <nav className="flex flex-col gap-4 text-base font-medium text-[#1C1C1F]">
             {navLinks.map((item) => (
               <button
@@ -210,7 +210,7 @@ export const Header: React.FC = () => {
                 {item.label}
               </button>
             ))}
-            <div className="pt-2 flex flex-col gap-2">
+            <div className="pt-3 flex flex-col gap-3">\n              <label className="flex items-center justify-between text-sm text-[#6B6864]">Currency <select value={currency} onChange={(e) => setCurrency(e.target.value as CurrencyCode)} className="bg-white border border-[#DDD7CE] rounded-md px-3 py-2 text-sm text-[#1C1C1F]"><option value="PKR">PKR (Rs.)</option><option value="USD">USD ($)</option><option value="AED">AED</option><option value="GBP">GBP (£)</option></select></label>
               <button
                 onClick={() => { setActiveView('admin'); setIsMobileMenuOpen(false); }}
                 className="flex items-center gap-2 py-2 text-sm text-[#B89758] font-semibold"
